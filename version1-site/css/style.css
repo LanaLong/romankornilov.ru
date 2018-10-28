@@ -265,11 +265,12 @@ body {
 
 .blockquote {
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   max-width: 500px;
   margin: auto;
   padding: .15rem 1.8rem;
-  border-left: .45rem solid #eceeef;
+  /*border-left: .45rem solid #eceeef;*/
+  border-left: 0 !important;
 
 }
 
@@ -344,7 +345,7 @@ body {
 }
 
 .navbar-brand {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 700;
   padding: 10px 20px;
   background-color: #000;
@@ -357,7 +358,7 @@ body {
 .nav-link-font, .navbar-text {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-weight: 600;
 }
 .navbar-text {
@@ -366,11 +367,11 @@ body {
 }
 
 .nav-item a {
-  color: #BAB9B4!important;
+  color: #BAB9B4 !important;
 }
 
 .nav-item a:hover {
-  color: #464642 !important;
+  color: #000000 !important;
 }
 
 .nav-item a:active {
