@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 .wrapper {
   display: flex;
@@ -81,7 +82,7 @@ body {
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 figure.snip1192 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   position: relative;
   /* float: left; */
   overflow: hidden;
@@ -340,4 +341,49 @@ body {
   .cell {
     width: calc(33.3333% - 2rem);
   }
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.nav-item a {
+
+}
+.nav-link-font, .navbar-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.navbar-text {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.nav-item a {
+  color: #BAB9B4!important;
+}
+
+.nav-item a:hover {
+  color: #464642 !important;
+}
+
+.nav-item a:active {
+  color: #000000 !important;
+}
+
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+     padding-right: 1.5rem; 
+     padding-left: 1.5rem; 
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
 }
