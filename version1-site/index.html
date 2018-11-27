@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Роман Корнилов. Фотопортфолио.</title>
+  <title>Roman Kornilov. Photo & Video</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Google Fonts -->
@@ -45,6 +45,33 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/51010676" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+
+  <!-- Carousel -->
+    <style>
+/*  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }*/
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  </style>
+<!-- Carousel -->
+
+
+
 </head>
 
 <body>
@@ -59,11 +86,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto mr-auto">
-<!--         <li class="nav-item active">
-          <a class="nav-link" href="#">Главная
-            <span class="sr-only">(current)</span>
-          </a>
-        </li> -->
         <li class="nav-item">
             <a class="nav-link nav-link-font text-uppercase" href="portrait.html">Портрет</a>
           </li>
@@ -86,7 +108,48 @@
     </div>
   </nav>
 
-  <div class="header-row"> 
+ <!--Carousel Wrapper-->
+<div id="carousel-index" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-index" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-index" data-slide-to="1"></li>
+    <li data-target="#carousel-index" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <!--First slide-->
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./img/portrait/portrait_15.jpg" alt="First slide">
+    </div>
+    <!--/First slide-->
+    <!--Second slide-->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./img/portrait/portrait_53.jpg" alt="Second slide">
+    </div>
+    <!--/Second slide-->
+    <!--Third slide-->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./img/portrait/portrait_67.jpg" alt="Third slide">
+    </div>
+    <!--/Third slide-->
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-index" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-index" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+<!--   <div class="header-row"> 
     <img src="./img/portrait/portrait_15.jpg" class="w-image-header img-fluid">
     <img src="./img/portrait/portrait_53.jpg" class="w-image-header img-fluid">
     <img src="./img/portrait/portrait_35.jpg" class="w-image-header img-fluid">
@@ -98,7 +161,6 @@
   <header>
     <div class="author">
       <img src="./img/author.jpg" style="width:200px;" alt="Роман Корнилов"/>
-     <!--  <h5 class="mt-2 mb-4">Роман Корнилов<span class="prof font-normal text-black-50">Фотохудожник</span><br /><span>Фотопортреты.<br />Репортажная фотосъемка.</span></h5> -->
     </div>
   
     <section class="blockquote text-black-50 my-4">
@@ -108,29 +170,174 @@
      <p class="my-0">Мой подход к людям, способность видеть и&nbsp;чувствовать эмоции на протяжении всего дня и&nbsp;желание постоянно развиваться стали основными элементами в развитии моего&nbsp;стиля.</p>
       </blockquote>
    </section>
- </header>
+ </header> -->
 
  <!-- /content -->
 </div>
 
+
+<section id="author">
+  <div class="row my-4">
+  <div class="col-md-4">
+    <img src="./img/author.jpg" class="img-fluid px-sx-auto" style="width:200px;" alt="Roman Kornilov">
+  </div>
+  <div class="col-md-8 my-4">
+    <p class="descript">Они словно исчезают, прежде чем мы сможем их увидеть! Я&nbsp;стремлюсь сохранить эти моменты, и создаю продуманные образы, чтобы они надолго остались в ваших воспоминаниях.</p>
+      <p class="descript">Внимательно относясь к деталям, я могу создать красивое и&nbsp;уникальное повествование, ведь нас всегда окружает красота, и она часто проявляется в простейших формах.</p>
+     <p class="descript">Мой подход к людям, способность видеть и&nbsp;чувствовать эмоции на протяжении всего дня и&nbsp;желание постоянно развиваться стали основными элементами в развитии моего&nbsp;стиля.</p>
+  </div>
+</div>
+</section>
+
+
+
+<!-- Order -->
+<div class="orderblock my-3">
+  <div class="row text-center">
+    <div class="col-sx-12 col-md-8 d-flex align-items-center justify-content-center">
+       <p class="px-4 pt-sx-3 py-3"><span class="text-white-50">У меня Вы можете</span> заказать фотосъемку ивента <span class="text-white-50">или</span>&nbsp;персональную фотосессию</p>
+    </div>
+    <div class="col-xs-12 col-md-4 align-items-center justify-content-center">
+      <button type="button" class="buttonOrder btn btn-outline-light waves-effect mx-4 my-3" href="#">Заказать</button>
+    </div>
+  </div>
+ 
   
-<div class="footer">
-  <div class="footer-bg-main">
+</div>
+<!-- Order -->
+<!-- <section id="section-id-1487483143368" class="sppb-section ">
+  <div class="sppb-row-container">
+    <div class="sppb-row">
+      <div class="sppb-col-md-12 sppb-col-sm-12 sppb-col-xs-12">
+        <div id="column-id-1486233916954" class="sppb-column ">
+          <div class="sppb-column-addons">
+            <div id="sppb-addon-1486233916953" class="clearfix"><div class="sppb-addon sppb-addon-cta ">
+              <div class="sppb-row">
+                <div class="sppb-col-sm-8">
+                  <h3 class="sppb-addon-title sppb-cta-title">У меня Вы можете заказать фотосъемку ивента или персональную фотосессию</h3><p class="sppb-cta-text"></p></div>
+                  <div class="sppb-col-sm-4 sppb-text-right">
+                    <a target="_blank" href="/kontakty.html" id="btn-1486233916953" class="sppb-btn sppb-btn-default sppb-btn-square">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sppb-addon-1494065555613" class="sppb-hidden-md sppb-hidden-lg sppb-hidden-sm clearfix">
+              <div class="sppb-empty-space  clearfix">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!--  -->
+<!--  -->
+  
+<!-- <div class="footer">
+  <div class="footer-bg-main"> -->
     <!-- Social icons -->
-    <ul class="list-inline text-center list-unstyled my-4">
+<!--     <ul class="list-inline text-center list-unstyled my-4">
         <li class="list-inline-item">
        <a href="https://www.instagram.com/roman_kornilov/" class="ins-ic mr-3"><i class="fa fa-lg fa-instagram"> </i></a>
         </li>
-        <li class="list-inline-item">
+        <li class="list-inline-item"> -->
         <!--Vkontakte-->
-        <a href="https://vk.com/kornilovpro" class="vk-ic mr-3"><i class="fa fa-lg fa-vk"> </i></a>
-        </li>
-      </ul>
+<!--         <a href="https://vk.com/kornilovpro" class="vk-ic mr-3"><i class="fa fa-lg fa-vk"> </i></a> -->
+<!--         </li>
+      </ul> -->
       <!-- /Social icons -->
-      <p class="copyright text-center text-black-50 pt-0">© 2018 Roman Kornilov. PhotoArt. All right reserved.</p>
-  </div>
+<!--       <p class="copyright text-center text-black-50 pt-0">© 2018 Copyright:  Roman Kornilov. PhotoArt. All right reserved.</p>
+  </div> -->
   <!-- /footer -->
-  </div>
+  <!-- </div> -->
+
+
+
+  <!-- Footer mdb -->
+  <!-- Footer -->
+<footer class="page-footer font-small black pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Roman Kornilov</h5>
+          <p>Photo & Video</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" style="background-color: #fff; height:1px;">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Контакты:</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">+7 (905) 556 94 07</a>
+              </li>
+              <li>
+                <a href="#!">kornilov.business@gmail.com</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Я онлайн:</h5>
+
+            <!-- Social icons -->
+              <ul class="list-inline list-unstyled my-0">
+                <li class="list-inline-item">
+               <a href="https://www.instagram.com/roman_kornilov/" class="ins-ic mr-3"><i class="fa fa-lg fa-instagram"> </i></a>
+                </li>
+                <li class="list-inline-item">
+                <!--Vkontakte-->
+                <a href="https://vk.com/kornilovpro" class="vk-ic mr-3"><i class="fa fa-lg fa-vk"> </i></a>
+                </li>
+              </ul>
+            <!-- /Social icons -->
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:  Roman Kornilov. PhotoArt. All right reserved.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+
+
+
+
+
+  <!-- /Footer mdb -->
+
+
+
 
 <!-- /wrapper -->
 </div>
@@ -143,6 +350,29 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- script bootatrap carousel -->
+  <script>
+  // Activate Carousel
+      $("#carousel-index").carousel();
+
+      // Enable Carousel Indicators
+      $(".item").click(function(){
+          $("#carousel-index").carousel(1);
+      });
+
+      // Enable Carousel Controls
+      $(".left").click(function(){
+          $("#carousel-index").carousel("prev");
+      });  
+  </script>
+  <!-- /script bootatrap carousel -->
+
+
+
+
+
+
 </body>
 
 </html>
